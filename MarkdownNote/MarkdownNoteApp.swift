@@ -13,5 +13,9 @@ struct MarkdownNoteApp: App {
         WindowGroup {
             ContentView()
         }
+        //Hiding title  bar
+        #if os(macOS)
+        .windowStyle(HiddenTitleBarWindowStyle())
+        #endif
     }
 }
