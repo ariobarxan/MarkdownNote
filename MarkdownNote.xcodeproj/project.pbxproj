@@ -18,6 +18,7 @@
 		F412C6032BF4A81400B0FAA9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F412C6022BF4A81400B0FAA9 /* Colors.xcassets */; };
 		F412C6072BF4C91200B0FAA9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412C6062BF4C91200B0FAA9 /* Note.swift */; };
 		F412C60B2BF5CA8600B0FAA9 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412C60A2BF5CA8600B0FAA9 /* BlurView.swift */; };
+		F412C60D2BF6D5A400B0FAA9 /* NoteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412C60C2BF6D5A400B0FAA9 /* NoteCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F412C6022BF4A81400B0FAA9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F412C6062BF4C91200B0FAA9 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		F412C60A2BF5CA8600B0FAA9 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		F412C60C2BF6D5A400B0FAA9 /* NoteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +68,12 @@
 		F412C5E42BF49FCC00B0FAA9 /* MarkdownNote */ = {
 			isa = PBXGroup;
 			children = (
-				F412C6082BF5CA7100B0FAA9 /* Components */,
+				F412C5E52BF49FCC00B0FAA9 /* MarkdownNoteApp.swift */,
+				F412C5E72BF49FCC00B0FAA9 /* ContentView.swift */,
 				F412C5FE2BF4A62300B0FAA9 /* Home */,
 				F412C6042BF4C8C800B0FAA9 /* Models */,
 				F412C6012BF4A7FD00B0FAA9 /* Resources */,
 				F412C5F52BF4A0D700B0FAA9 /* Utils */,
-				F412C5E52BF49FCC00B0FAA9 /* MarkdownNoteApp.swift */,
-				F412C5E72BF49FCC00B0FAA9 /* ContentView.swift */,
 				F412C5EB2BF49FCF00B0FAA9 /* MarkdownNote.entitlements */,
 				F412C5EC2BF49FCF00B0FAA9 /* Preview Content */,
 			);
@@ -90,6 +91,7 @@
 		F412C5F52BF4A0D700B0FAA9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F412C6082BF5CA7100B0FAA9 /* Components */,
 				F412C5FB2BF4A23000B0FAA9 /* Enums */,
 				F412C5F62BF4A0E600B0FAA9 /* Extensions */,
 			);
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				F412C5FF2BF4A66A00B0FAA9 /* HomeView.swift */,
+				F412C60C2BF6D5A400B0FAA9 /* NoteCardView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				F412C60B2BF5CA8600B0FAA9 /* BlurView.swift in Sources */,
 				F412C5E82BF49FCC00B0FAA9 /* ContentView.swift in Sources */,
 				F412C6072BF4C91200B0FAA9 /* Note.swift in Sources */,
+				F412C60D2BF6D5A400B0FAA9 /* NoteCardView.swift in Sources */,
 				F412C5E62BF49FCC00B0FAA9 /* MarkdownNoteApp.swift in Sources */,
 				F412C6002BF4A66A00B0FAA9 /* HomeView.swift in Sources */,
 				F412C5FA2BF4A21200B0FAA9 /* UIScreen.swift in Sources */,

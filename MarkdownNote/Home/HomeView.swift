@@ -50,7 +50,6 @@ struct HomeView: View {
 }
 
 
-
 extension HomeView {
     
     @ViewBuilder
@@ -143,38 +142,6 @@ extension HomeView {
     }
     
     @ViewBuilder
-    func cardView(note: Note) -> some View {
-        VStack {
-            Text(note.note)
-                .font(Device.hasMacOS ? .title3 : .body)
-                .multilineTextAlignment(.leading)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            
-            HStack {
-                Text(note.date, style: .date)
-                    .foregroundStyle(.black)
-                    .opacity(0.8)
-                
-                Spacer(minLength: 0)
-                
-                //Edit button
-                Button(action: {}) {
-                    Image(systemName: "pencil")
-                        .font(.system(size: 15, weight: .bold))
-                        .padding(8)
-                        .foregroundStyle(.white)
-                        .background(Color(.black))
-                        .clipShape(Circle())
-                }
-            }
-            .padding(.top, 55)
-        }
-        .padding()
-        .background(note.cardColor)
-        .clipShape(RoundedRectangle(cornerRadius: 18))
-    }
-    
-    @ViewBuilder
     func mainContent() -> some View {
         VStack(spacing: 6) {
             
@@ -213,7 +180,7 @@ extension HomeView {
                     LazyVGrid(columns: columns, spacing: 25) {
                         // Notes
                         ForEach(notes) { note in
-                            cardView(note: note)
+                            NoteCardView(note: note)
                         }
                     }
                 }
